@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PaymentScreen extends StatelessWidget {
@@ -9,7 +8,7 @@ class PaymentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Checkout',
+        title: const Text('Checkout',
         style: TextStyle(),),
         centerTitle: true,
         backgroundColor:Colors.pink,

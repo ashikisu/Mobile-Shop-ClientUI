@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mobile_shop_client/screens/payment_screen.dart';
@@ -36,13 +35,13 @@ class ProductDescription extends StatelessWidget {
             ),
             const SizedBox(height: 20,),
              Text(product.name??'',
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold
             ),),
             const SizedBox(height: 20,),
              Text(product.description??'',
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               height: 1.6,
               
@@ -51,7 +50,7 @@ class ProductDescription extends StatelessWidget {
             const SizedBox(height: 20,),
 
             Text('BDT:${product.price??""}',
-              style: TextStyle(
+              style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               color: Colors.green,
@@ -77,7 +76,7 @@ class ProductDescription extends StatelessWidget {
                 Get.to(const PaymentScreen());
               },
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(vertical: 15, horizontal: 135),
+                    padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 135),
                     backgroundColor: Colors.purple,
                   ),
                   child: const Text('Buy Now',style: TextStyle(color: Colors.white),)

@@ -1,8 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_state_manager/src/simple/get_state.dart';
 import 'package:mobile_shop_client/controller/login_controller.dart';
 import 'package:mobile_shop_client/screens/login_screen.dart';
 import 'package:mobile_shop_client/widgets/otp_text_field.dart';
@@ -31,7 +29,7 @@ class RegisterScreen extends StatelessWidget {
               ),
 
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             TextField(
               keyboardType: TextInputType.text,
               controller: control.registerNameController,
@@ -44,7 +42,7 @@ class RegisterScreen extends StatelessWidget {
                   hintText: 'Enter Your Name'
               ),
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             TextField(
               keyboardType: TextInputType.phone,
               controller: control.registerNumberController,
@@ -57,11 +55,11 @@ class RegisterScreen extends StatelessWidget {
                   hintText: 'Enter Your Phone Number'
               ),
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             OtpTextField(otpController: control.otpController,visible: control.otpFieldShown, onComplete: (otp ) {
               control.otpEnter= int.tryParse(otp?? '0000');
             },),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             ElevatedButton(onPressed: () {
               if(control.otpFieldShown){
                 control.addUser();

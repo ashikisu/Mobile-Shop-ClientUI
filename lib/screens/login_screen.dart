@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:mobile_shop_client/controller/login_controller.dart';
-import 'package:mobile_shop_client/screens/home_screen.dart';
 import 'package:mobile_shop_client/screens/register_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -29,7 +27,7 @@ class LoginScreen extends StatelessWidget {
                 ),
 
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               TextField(
                 controller: control.loginNumberController,
                 keyboardType: TextInputType.phone,
@@ -42,7 +40,7 @@ class LoginScreen extends StatelessWidget {
                     hintText: 'Enter Your Phone Number'
                 ),
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               ElevatedButton(onPressed: () {
               },
                 child: const Text('Login'
